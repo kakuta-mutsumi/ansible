@@ -1,0 +1,41 @@
+---
+
+- name: Dock - set size of icons
+  osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: float
+    value: 40
+  notify: restart dock
+
+- name: Dock - Set autohide
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
+  notify: restartl dock
+
+- name: Dock - orientation left
+  osx_defaults:
+    domain: com.apple.dock
+    key: orientation
+    type: string
+    value: left
+  notify: restart dock
+
+- name: Dock - only show open applications
+  osx_defaults:
+    domain: com.apple.dock
+    key: static-only
+    type: bool
+    value: true
+  notify: restart dock
+
+- name: Finder - show hidden files in finder
+  osx_defaults:
+    domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: true
+  notify: restart dock

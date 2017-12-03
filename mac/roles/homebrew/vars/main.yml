@@ -1,0 +1,22 @@
+---
+
+homebrew_taps:
+  - caskroom/cask
+
+homebrew_packages:
+  - { name: zsh}
+  - { name: tree}
+  - { name: zsh-completions}
+  - { name: wget}
+  - { name: coreutils}
+
+homebrew_cask_packages:
+  - evernote
+  - firefox
+  - google-chrome
+  - google-japanese-ime
+  - gyazo
+  - slack
+  - docker
+  - sublime-text
+  - adobe-creative-cloud
