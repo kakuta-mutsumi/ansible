@@ -9,6 +9,8 @@ homebrew_packages:
   - { name: zsh-completions}
   - { name: wget}
   - { name: coreutils}
+  - { name: cocoapods }
+  - { name: swiftlint }
 
 homebrew_cask_packages:
   - evernote
